@@ -71,7 +71,7 @@ Use the `--debug` flag to have the script tell you what it's doing when.
 
 Use the `--log-dir` flag with an argument to tell it to store things in a different directory than the default `/var/camera` directory.
 
-Use the `--temperature` flag to pass a different temperature to OpenAI than the default `0.7`.
+Use the `--temperature` flag to pass a different temperature to OpenAI than the default `1.0`.
 
 # Caveats
 

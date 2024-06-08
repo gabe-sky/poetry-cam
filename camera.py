@@ -26,7 +26,7 @@ import time
 parser = argparse.ArgumentParser()
 parser.add_argument('--debug', '-d', action='store_true')
 parser.add_argument('--logdir', '-l', default='/var/camera')
-parser.add_argument('--temperature','-t', type=float, default=0.7)
+parser.add_argument('--temperature','-t', type=float, default=1.0)
 args = parser.parse_args()
 
 # Create an object for the camera and set its configuration
@@ -67,7 +67,7 @@ def poetry():
         "content": [
           {
             "type": "text",
-            "text": "What's going on in this image?  Please describe it in a four line poem.",
+            "text": "What's going on in this image?  Please describe it in a four line poem.  If there is a person, be sure to focus on that.",
           },
           {
             "type": "image_url",
