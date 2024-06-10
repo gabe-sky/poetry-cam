@@ -26,7 +26,7 @@ import time
 parser = argparse.ArgumentParser()
 parser.add_argument('--debug', '-d', action='store_true')
 parser.add_argument('--logdir', '-l', default='/var/camera')
-parser.add_argument('--temperature','-t', type=float, default=1.0)
+parser.add_argument('--temperature','-t', type=float, default=0.7)
 args = parser.parse_args()
 
 # Create an object for the camera and set its configuration
